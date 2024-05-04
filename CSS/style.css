@@ -122,6 +122,10 @@ main{
     max-width: 85%;
 }
 
+.more-information:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
 .more-information img{
     max-width: 500px;
     max-height: 500px;
@@ -149,6 +153,52 @@ footer{
     min-height: 50px;
     background-color: #7EA1FF;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 15px;
+}
+
+
+.social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 10px;
+}
+
+.social img{
+    max-width: 30px;
+    max-height: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+
+.about .more-information img{
+    max-width: 300px;
+    max-height: 300px;
+
+}
+
+.about .more-information{
+    padding: 30px 5%;
+
+}
+
+.about .more-information:nth-child(even){
+    background-color: #5BBCFF;
+    border-radius: 50px;
+
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
