@@ -458,6 +458,47 @@ label:after {
 .date-wrapper div{
     max-width: 50%;
 }
+.halfday{
+    display: flex;
+    flex-direction: column;
+}
+.halfday h1 {
+    font-size: 40px;
+}
+.halfday p {
+    font-size: 32px;
+    border-left-style: solid;
+    border-left-color: #444;
+}
+.midsec {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: #5BBCFF;
+    border-radius: 10px;
+    background-color: #5BBCFF;
+}
+.midsec h1 {
+    font-size: 40px;
+}
+.midsec p {
+    font-size: 32px;
+}
+.endsec {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+}
+.endsec h1 {
+    font-size: 40px;
+}
+.endsec p {
+    font-size: 32px;
+    border-left-style: solid;
+    border-left-color: #444;
+}
+
 
 @media screen and (max-width:750px)  {
     .header{
@@ -478,6 +519,7 @@ label:after {
     .more-information {
         flex-direction: column-reverse;
     }
+    
 }
 
 
