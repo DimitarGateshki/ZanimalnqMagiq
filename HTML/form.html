@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Записване</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="../assets/imgs/logo.png" alt=""></a>
+        </div>
+        <ul class="menu">
+            <a href="index.html"><li class="menu-item">Начало</li></a>
+            <li class="menu-item">Програма</li>
+            <li class="menu-item">Галерия</li>
+            <a href="abou.html"><li class="menu-item">За нас</li></a>
+        </ul>
+    </header>
+
+    <main class="main">
+        <section class="banner">
+            <div class="main-title">
+                <h1>Форма за записване на дете</h1>
+            </div>
+        </section>
+    <form action="#" method="post" class="contact-form">
+        <input type="text" id="name" name="name" required placeholder="Име, презиме, фамилия на детето"><br>
+
+        <input type="email" id="email" name="email" required placeholder="Електронна поща"><br>
+
+        <input type="text" id="citizenship" name="citizenship" pattern="[0-9]{10}" title="Unique Citizenship Number must be 10 digits" placeholder="ЕГН" required><br>
+
+        <label for="select">Посочете дейност:</label><br>
+        <select id="select" name="select" required>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select><br>
+
+        <input type="text" id="textfield" name="textfield" placeholder="Кой клас и от кое училище" required><br>
+
+        <input id="text" name="address" placeholder="Домашен адрес" required></input><br>
+
+        <input type="tel" id="phone" name="phone" placeholder="Телефон за връзка" pattern="[0-9]{10,12}" title="Phone number must be between 10 to 12 digits" required><br>
+
+        <div class="date-wrapper">
+        <div>
+        <label for="start_date">Дата на започване:</label><br>
+        <input type="date" placeholder="Дата на започване" id="start_date" name="start_date" required><br>
+         </div>
+         <div>
+        <label for="end_date">Дата на приключване</label><br>
+        <input type="date" id="end_date" name="end_date" required><br>
+    </div>
+        </div>
+        <input type="text" id="name2" name="name2" placeholder="Име, презиме, фамилия на майката" required><br>
+
+        <input type="email" id="email2" name="email2" placeholder="Електронна поща на майката" required><br>
+
+        <input type="text" id="name3" name="name3" placeholder="Име, презиме, фамилия на бащата" required><br>
+
+        <input type="email" id="email3" name="email3" placeholder="Електронна поща на бащата" required><br>
+
+        <textarea id="comments" placeholder="Има ли нещо специфично със здравето на детето, което бихте споделили с нас" name="comments"></textarea><br>
+
+        <label for="location">Локация на детето:</label><br>
+        <select id="location" name="location" required>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <footer>
+        <div class="social">
+            <a href=>0894534969</a>
+           <a href="">ivelina.chilikova@abv.bg</a>
+           <!-- <div class="social-icon">
+               <img src="../assets/imgs/icons8-facebook-50 (1).png" alt="">
+           </div> -->
+        </div>
+        <a href="">гр. Пловдив ул. Богомил 32 в ОУ ,,Душо Хаджидеков"</a>
+    </footer>
+</main>
+
+
+</body>
+</html>
