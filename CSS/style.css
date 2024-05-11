@@ -459,6 +459,25 @@ label:after {
     max-width: 50%;
 }
 
-
+@media screen and (max-width:750px)  {
+    .header{
+        flex-direction: column;
+    }
+    .menu {
+        gap: 30px;
+        margin:0px;
+        font-size: 28px;
+    }
+    .main-features {
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    .feature {
+        width: 100%;
+    }
+    .more-information {
+        flex-direction: column-reverse;
+    }
+}
 
 
