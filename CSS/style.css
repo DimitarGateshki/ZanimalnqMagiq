@@ -10,7 +10,7 @@ body{
     flex-direction: row;
     gap: 20px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #7EA1FF;
     min-height: 100px;
     padding: 10px 80px;
@@ -24,7 +24,7 @@ body{
     align-items: center;
     justify-content: space-between;
     list-style: none;
-    gap: 60px;
+    gap: 100px;
     font-size: 32px;
     font-weight: 700;
     font-family: 'Times New Roman', Times, serif;
@@ -35,6 +35,9 @@ body{
     max-width: 100px;
     max-height: 100px;
     justify-self: flex-start;
+    position: absolute;
+    margin-left: 23px;
+    margin-top: 10px;
 }
 
 .logo img{
@@ -368,5 +371,21 @@ label:after {
 	border-top-right-radius: 50%;
 	border-bottom-right-radius: 50%;
 }
+@media only screen and (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Items are stacked vertically */
+        align-items: flex-start; /* Items aligned to the start */
+        padding: 10px 20px; /* Padding adjusted for smaller screens */
+    }
 
+    .menu {
+        font-size: 18px;
+        gap: 30px;
+        margin: 0;
+    }
 
+    .logo {
+        position: static; /* Logo returns to its original position */
+        margin: 0 auto 20px;
+    }
+}
