@@ -458,6 +458,14 @@ label:after {
 .date-wrapper div{
     max-width: 50%;
 }
+.firstsec{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 20px;
+}
 .halfday{
     display: flex;
     flex-direction: column;
@@ -471,13 +479,16 @@ label:after {
     border-left-color: #444;
 }
 .midsec {
-    margin-top: 200px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     border-style: solid;
     border-color: #5BBCFF;
     border-radius: 10px;
     background-color: #5BBCFF;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
 }
 .midsec h1 {
     font-size: 40px;
@@ -488,7 +499,7 @@ label:after {
 .endsec {
     display: flex;
     flex-direction: column;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 .endsec h1 {
     font-size: 40px;
@@ -498,15 +509,36 @@ label:after {
     border-left-style: solid;
     border-left-color: #444;
 }
+.on-right{
+    margin-left: 200px;
+}
+.btn{
+    margin-top: 50px;
+    padding: 20px 50px;
+    background: #7EA1FF;
+    font-size: 28px;
+    text-align: center;
+    border-radius: 50px;
+    transition: all 0.2s ease-in-out;
+}
+.btn:hover{
+    background-color: #5BBCFF;
+    scale: 1.1;
+    transition: all 0.2s ease-in-out;
+
+}
+
 
 
 @media screen and (max-width:750px)  {
     .header{
         flex-direction: column;
+        padding: 10px;
     }
     .menu {
         gap: 30px;
-        margin:0px;
+        margin: 0;
+        padding: 0;
         font-size: 28px;
     }
     .main-features {
@@ -516,9 +548,45 @@ label:after {
     .feature {
         width: 100%;
     }
-    .more-information {
+    .more-information, 
+    .about .more-information{
         flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
     }
+    .more-information img{
+        max-width: 100%;
+    }
+    .about .more-information:nth-child(odd){
+        background-color: #5BBCFF;
+        border-radius: 50px;
+        align-self: center;
+        
+    }
+    
+    .about .more-information:nth-child(odd) img{
+        max-height: 200px;
+    }
+    .on-right{
+        margin-left: 0;
+    }
+    .about form{
+        top: 174px;
+    }
+    .firstsec{
+        flex-direction: column;
+        gap: 0px;
+    }
+    .midsec,
+    .endsec{
+        padding: 0 10%;
+    }
+    .firstsec p,
+    .endsec p{
+        padding-left: 10px;
+    }
+
     
 }
 
