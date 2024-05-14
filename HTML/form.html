@@ -26,7 +26,7 @@
                 <h1>Форма за записване на дете</h1>
             </div>
         </section>
-    <form action="#" method="post" class="contact-form">
+    <form onsubmit="sendEmail()" id="myForm" class="contact-form">
         <input type="text" id="name" name="name" required placeholder="Име, презиме, фамилия на детето"><br>
 
         <input type="email" id="email" name="email" required placeholder="Електронна поща"><br>
@@ -75,6 +75,10 @@
 
         <input type="submit" value="Submit">
     </form>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="../JS/script.js"></script>
+
 
     <footer>
         <div class="social">
