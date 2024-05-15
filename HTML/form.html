@@ -26,58 +26,60 @@
                 <h1>Форма за записване на дете</h1>
             </div>
         </section>
-    <form onsubmit="sendEmail()" id="myForm" class="contact-form">
-        <input type="text" id="name" name="name" required placeholder="Име, презиме, фамилия на детето"><br>
+    <form action="https://api.web3forms.com/submit" method="POST" id="myForm" class="contact-form">
 
-        <input type="email" id="email" name="email" required placeholder="Електронна поща"><br>
+        <input type="hidden" name="access_key" value="76e8b67c-a2b9-4f39-9fd9-404db426ed3c">
 
-        <input type="text" id="citizenship" name="citizenship" pattern="[0-9]{10}" title="Unique Citizenship Number must be 10 digits" placeholder="ЕГН" required><br>
+        <input type="text" id="name" name="Име, презиме, фамилия на детето:" required placeholder="Име, презиме, фамилия на детето"><br>
+
+        <input type="email" id="email" name="Електронна поща" required placeholder="Електронна поща:"><br>
+
+        <input type="text" id="citizenship" name="ЕГН" pattern="[0-9]{10}" title="Unique Citizenship Number must be 10 digits" placeholder="ЕГН:" required><br>
 
         <label for="select">Посочете дейност:</label><br>
-        <select id="select" name="select" required>
+        <select id="select" name="Посочете дейност:" required>
             <option value="option1">Option 1</option>
             <option value="option2">Option 2</option>
             <option value="option3">Option 3</option>
         </select><br>
 
-        <input type="text" id="textfield" name="textfield" placeholder="Кой клас и от кое училище" required><br>
+        <input type="text" id="textfield" name="Кой клас и от кое училище:" placeholder="Кой клас и от кое училище" required><br>
 
-        <input id="text" name="address" placeholder="Домашен адрес" required></input><br>
+        <input id="text" name="Домашен адрес:" placeholder="Домашен адрес" required></input><br>
 
-        <input type="tel" id="phone" name="phone" placeholder="Телефон за връзка" pattern="[0-9]{10,12}" title="Phone number must be between 10 to 12 digits" required><br>
+        <input type="tel" id="phone" name="Телефон за връзка:" placeholder="Телефон за връзка" pattern="[0-9]{10,12}" title="Phone number must be between 10 to 12 digits" required><br>
 
         <div class="date-wrapper">
         <div>
         <label for="start_date">Дата на започване:</label><br>
-        <input type="date" placeholder="Дата на започване" id="start_date" name="start_date" required><br>
+        <input type="date" placeholder="Дата на започване" id="start_date" name="Дата на започване:" required><br>
          </div>
          <div>
         <label for="end_date">Дата на приключване</label><br>
-        <input type="date" id="end_date" name="end_date" required><br>
+        <input type="date" id="end_date" name="Дата на приключване:" required><br>
     </div>
         </div>
-        <input type="text" id="name2" name="name2" placeholder="Име, презиме, фамилия на майката" required><br>
+        <input type="text" id="name2" name="Име, презиме, фамилия на майката:" placeholder="Име, презиме, фамилия на майката" required><br>
 
-        <input type="email" id="email2" name="email2" placeholder="Електронна поща на майката" required><br>
+        <input type="email" id="email2" name="Електронна поща на майката:" placeholder="Електронна поща на майката" required><br>
 
-        <input type="text" id="name3" name="name3" placeholder="Име, презиме, фамилия на бащата" required><br>
+        <input type="text" id="name3" name="Име, презиме, фамилия на бащата:" placeholder="Име, презиме, фамилия на бащата" required><br>
 
-        <input type="email" id="email3" name="email3" placeholder="Електронна поща на бащата" required><br>
+        <input type="email" id="email3" name="Електронна поща на бащата:" placeholder="Електронна поща на бащата" required><br>
 
-        <textarea id="comments" placeholder="Има ли нещо специфично със здравето на детето, което бихте споделили с нас" name="comments"></textarea><br>
+        <textarea id="comments" placeholder="Има ли нещо специфично със здравето на детето, което бихте споделили с нас" name="Има ли нещо специфично със здравето на детето, което бихте споделили с нас:"></textarea><br>
 
         <label for="location">Локация на детето:</label><br>
-        <select id="location" name="location" required>
+        <select id="location" name="Локация на детето:" required>
             <option value="option1">Option 1</option>
             <option value="option2">Option 2</option>
             <option value="option3">Option 3</option>
         </select><br>
 
         <input type="submit" value="Submit">
+
     </form>
-    <script src="https://smtpjs.com/v3/smtp.js">
-    </script>
-    <script src="../JS/script.js"></script>
+    
 
 
     <footer>
