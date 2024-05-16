@@ -588,7 +588,17 @@ label:after {
     .endsec p{
         padding-left: 10px;
     }
-
+    .contact-form{
+        width: 65%;
+    }
+    .contact-form input,
+    .contact-form textarea
+    {
+        width: 85%;
+    }
+    .date-wrapper{
+        flex-direction: column;
+    }
     
 }
 
