@@ -171,6 +171,10 @@ main{
     font-size: 22px;
     font-weight: 400;
 }
+.programh {
+    font-size: 32px;
+    border-bottom-style: dashed;
+}
 .program {
     font-size: 22px;
     font-weight: 400;
