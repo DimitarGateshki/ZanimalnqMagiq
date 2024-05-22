@@ -484,10 +484,20 @@ label:after {
 }
 .halfday h1 {
     font-size: 40px;
+    border-bottom-style: dotted;
 }
 .halfday p {
     font-size: 32px;
-    border-left-style: solid;
+    border-left-style: dotted;
+    border-left-color: #444;
+}
+.smetka h1 {
+    font-size: 40px;
+    border-bottom-style: dotted;
+}
+.smetka p {
+    font-size: 30px;
+    border-left-style: dotted;
     border-left-color: #444;
 }
 .midsec {
