@@ -679,4 +679,9 @@ label:after {
             .column {
                 min-width: 100%;
             }
+            .program {
+                border-left-style: none;
+                border: none;
+            }
         }
+        
