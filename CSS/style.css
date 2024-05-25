@@ -647,6 +647,22 @@ label:after {
             margin: 50px 0;
 
         }
+        .gallerytext {
+            font-size: 40px;
+            color: black;
+            border-bottom-style: dotted;
+        }
+        .row2{
+            display: flex;
+            flex-wrap: wrap;
+            width: 40%;
+            padding: 5%;
+            background-color: #7EA1FF;
+            border-radius: 50px;
+            margin: 50px 0;
+            flex-direction: column;
+            justify-content: flex-start; 
+        }
 
         /* Each column */
         .column {
