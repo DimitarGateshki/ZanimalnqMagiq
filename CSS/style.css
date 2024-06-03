@@ -559,7 +559,39 @@ label:after {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.uchitel{
+    max-width: 90%;
+    max-height: 40vw;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+
+.uchitel img{
+    object-fit: contain;
+    
+}
+
+.t-info{
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+ .big-img{
+    max-width: 90%;
+    max-height: 40vw;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
 
 @media screen and (max-width:750px)  {
     .header{
@@ -655,13 +687,14 @@ label:after {
         .row2{
             display: flex;
             flex-wrap: wrap;
-            width: 40%;
+            width: 60%;
             padding: 5%;
             background-color: #7EA1FF;
             border-radius: 50px;
             margin: 50px 0;
             flex-direction: column;
-            justify-content: flex-start; 
+            align-items: center;
+            justify-content: center; 
         }
 
         /* Each column */
@@ -694,6 +727,10 @@ label:after {
         @media screen and (max-width: 768px) {
             .column {
                 min-width: 100%;
+                display: flex;
+                 align-items: center;
+                 justify-content: center;
+                flex-direction: column;
             }
             .program {
                 border-left-style: none;
