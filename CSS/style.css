@@ -602,6 +602,24 @@ label:after {
     justify-content: flex-start;
 }
 
+.small-buttons-left{
+    margin-left: 7%;
+    align-self: flex-start;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: #7EA1FF;
+    padding: 10px 10px 50px 10px;
+    border-radius: 50px;
+}
+
+.small-buttons-left .btn{
+    background-color: #FFFAB7;
+    color: #000;
+}
+
 @media screen and (max-width:750px)  {
     .header{
         flex-direction: column;
@@ -674,6 +692,10 @@ label:after {
     .contact-form input[type=date] {
         margin-top: 20px;
         max-width: 100%;
+    }
+    .small-buttons-left{
+        align-items: center;
+        justify-content: center;
     }
     
 }
