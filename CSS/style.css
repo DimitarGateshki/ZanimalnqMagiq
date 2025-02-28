@@ -165,7 +165,7 @@ main{
 
 .section-title{
     font-size: 32px;
-    border-bottom-style: dashed;
+    border-bottom-style: groove;
 }
 .section-descriprion{
     font-size: 22px;
@@ -173,12 +173,12 @@ main{
 }
 .programh {
     font-size: 32px;
-    border-bottom-style: dashed;
+    border-bottom-style: groove;
 }
 .program {
     font-size: 22px;
     font-weight: 400;
-    border-left-style: dotted;
+    /* border-left-style: dotted; */
 }
 footer{
     margin-top: 100px;
@@ -488,21 +488,24 @@ label:after {
 }
 .halfday h1 {
     font-size: 40px;
-    border-bottom-style: dotted;
+    border-bottom-style:groove;
 }
 .halfday p {
     font-size: 32px;
-    border-left-style: dotted;
+    border-left-style:none;
     border-left-color: #444;
+    text-align: center;
 }
 .smetka h1 {
     font-size: 40px;
-    border-bottom-style: dotted;
+    border-bottom-style:none;
 }
 .smetka p {
     font-size: 30px;
-    border-left-style: dotted;
+    border-left-style: none;
     border-left-color: #444;
+    text-align: center;
+    line-height: 40px;
 }
 .midsec {
     margin-top: 100px;
@@ -538,12 +541,18 @@ label:after {
 .on-right{
     margin-left: 200px;
 }
+/* .buttons {
+    display: flex;
+    justify-self: flex-start;
+    flex-direction: column;
+} */
 .btn{
+    width: 450px;
     margin-top: 50px;
     padding: 20px 50px;
     background: #7EA1FF;
     font-size: 28px;
-    text-align: center;
+    text-align: left;
     border-radius: 50px;
     transition: all 0.2s ease-in-out;
 }
