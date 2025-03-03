@@ -12,6 +12,8 @@ body{
     padding: 0;
     width: 100%;
     height: 100%;
+    background-color: #FFFAB7;
+
 }
 
 .header{
@@ -59,6 +61,7 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+   
 }
 
 .banner{
@@ -140,6 +143,8 @@ main{
     gap: 150px;
     margin-top: 75px;
     max-width: 85%;
+    padding: 0 3%;
+    background-color: #FFFAB7;
 }
 
 .below-slider{
